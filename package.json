@@ -1,0 +1,21 @@
+{
+  "name": "ioc",
+  "version": "1.0.0",
+  "description": "Simple IoC container to allow registration and subsequent automatic creation of classes together with dependency hierarchy",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "test": "npm run build && mocha --recursive \"./tests/*.js\""
+  },
+  "author": "Gary Nicholson",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "sinon": "^9.2.3",
+    "sinon-chai": "^3.5.0",
+    "typescript": "^4.1.3"
+  }
+}
